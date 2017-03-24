@@ -4,7 +4,8 @@
   "description": "wheels",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/FrankFang/wheels/issues"
   },
-  "homepage": "https://github.com/FrankFang/wheels#readme"
+  "homepage": "https://github.com/FrankFang/wheels#readme",
+  "devDependencies": {
+    "webpack": "^2.3.1"
+  }
 }
