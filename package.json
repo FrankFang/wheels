@@ -1,0 +1,19 @@
+{
+  "name": "wheels",
+  "version": "0.1.0",
+  "description": "wheels",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrankFang/wheels.git"
+  },
+  "author": "frankfang",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/FrankFang/wheels/issues"
+  },
+  "homepage": "https://github.com/FrankFang/wheels#readme"
+}
