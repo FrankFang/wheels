@@ -4,26 +4,34 @@ const path = require('path')
 
 const config = {
   entry: {
-    'wheels': './src/index'
+    'demo': './src/demo'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
-    library: "wheels", 
+    library: "wheels",
     libraryTarget: "umd",
   },
   module: {
     rules: [
-      {test: /\.(js|jsx)$/, use: 'babel-loader'}
+      { test: /\.(js|jsx)$/, use: 'babel-loader' },
+      {
+        test: /\.(css)$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" },
+        ],
+      },
     ]
   },
   plugins: [
     //new webpack.optimize.UglifyJsPlugin(),
-    //new HtmlWebpackPlugin({
-      //template: './src/demo.html',
-      //filename: 'demo.html'
-    //})
-  ]
-};
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      filename: 'index.html'
+    })
+  ],
+  devtool: 'eval'
+}
 
-module.exports = config;
+module.exports = config
