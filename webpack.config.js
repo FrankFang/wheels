@@ -31,7 +31,10 @@ const config = {
       filename: 'index.html'
     })
   ],
-  devtool: 'eval'
+  devtool: 'eval',
+  devServer: {
+    stats: 'errors-only',
+  }
 }
 
 module.exports = config
