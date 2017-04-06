@@ -4,7 +4,8 @@
   "description": "wheels",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require babel-core/register",
+    "test": "mocha --require babel-core/register --recursive",
+    "test:watch": "mocha --require babel-core/register --watch --recursive",
     "build": "rm -rf dist && webpack --config webpack.config.js",
     "dev": "webpack-dev-server --progress --colors --inline"
   },
