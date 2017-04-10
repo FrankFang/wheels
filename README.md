@@ -6,4 +6,4 @@
 
 所有代码开源，方便阅读
 
-https://frankfang.github.io/wheels/demos/
+https://frankfang.github.io/wheels/
