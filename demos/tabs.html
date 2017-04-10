@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Tabs</title>
+
+  <div id="tabs">
+    <ol data-role="tabs-nav">
+      <li>tab 1</li>
+      <li>tab 2</li>
+      <li>tab 3</li>
+    </ol>
+    <ol data-role="tabs-panes">
+      <li>内容 1</li>
+      <li>内容 2</li>
+      <li>内容 3</li>
+    </ol>
+  </div>
+
+  <script src="../lib/dom/index.js"></script>
+  <script src="../lib/tabs/index.js"></script>
+  <style>
+    #tabs ol{
+      list-style: none;  margin: 0; padding: 0;
+    }
+    #tabs ol:first-child{
+      display: flex;
+    }
+    #tabs ol:first-child>li{
+      border: 1px solid;
+    }
+    #tabs ol:first-child>li.active{
+      background: yellow;
+    }
+    #tabs ol:nth-child(2){
+      border: 1px solid;
+    }
+    #tabs ol:nth-child(2) > li{
+      display: none;
+      min-height: 5em;
+    }
+    #tabs ol:nth-child(2) > li.active{
+      display: block;
+    }
+  </style>
+  <script>
+    new Tabs({
+      element: tabs
+    })
+  </script>
+</html>
