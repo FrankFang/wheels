@@ -7,8 +7,7 @@
     "test": "karma start --single-run",
     "test:watch": "karma start --no-single-run",
     "build": "rm -rf dist && webpack --config webpack.config.js",
-    "dev": "webpack-dev-server --progress --colors --inline",
-    "xxx": ""
+    "dev": "webpack-dev-server --progress --colors --inline --open"
   },
   "repository": {
     "type": "git",

@@ -2,4 +2,7 @@ import * as Wheels from '../lib/'
 
 require('../lib/components/tabs/default.css')
 
-console.log(Wheels)
+let t = new Wheels.Tabs({
+  element: document.querySelector('[data-role=tabs]')
+})
+console.log(t)
