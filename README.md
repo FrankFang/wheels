@@ -8,13 +8,20 @@
 
 所有代码开源，方便阅读
 
+# 预览
+
 https://frankfang.github.io/wheels/
 
 # 如何阅读源代码
 
-- Tabs 的源码：https://github.com/FrankFang/wheels/blob/master/lib/tabs/index.js
-- FullPage 的源码：https://github.com/FrankFang/wheels/blob/master/lib/fullpage/index.js
-- DOM 库的源码：https://github.com/FrankFang/wheels/blob/master/lib/dom/index.js
+- Tabs 的源码
+    1. https://github.com/FrankFang/wheels/blob/master/lib/tabs/index.js
+    2. https://github.com/FrankFang/wheels/blob/master/demos/tabs.html
+- FullPage 的源码
+    1. https://github.com/FrankFang/wheels/blob/master/lib/fullpage/index.js
+    2. https://github.com/FrankFang/wheels/blob/master/demos/fullpage.html
+- DOM 库的源码
+    1. https://github.com/FrankFang/wheels/blob/master/lib/dom/index.js
 
 # 运行
 
