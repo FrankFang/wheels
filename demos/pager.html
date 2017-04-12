@@ -5,22 +5,54 @@
   <title>Pager</title>
 
 
-  <div id="pager">
-  </div>
+  <div class="pager"> </div>
+  <div class="pager"> </div>
   <script src="../lib/dom/index.js"></script>
   <script src="../lib/bom/index.js"></script>
   <script src="../lib/pager/index.js"></script>
   <style>
+    body{ background: #E7E7E7; }
+    ol{ list-style:none; margin:0;padding:0; }
+    body{text-align: center;}
+
+    .pager{
+      display: inline-flex; padding: 1px; margin: 2em 0;
+      background: linear-gradient(to bottom, #969696 0%,#c1c1c1 100%);
+      border-radius: 4px; box-shadow: 0 1px 0 white;
+    }
+    .pager>nav{
+      display: flex; align-items: center; padding: 3px;
+      background: #D4D4D4; border-radius: 2px;
+      border-radius: 4px; box-shadow: inset 0 0 3px hsla(0,0%,0%,0.1);
+    }
+    .pager>nav>ol[data-role="pageNumbers"]{ display: flex; }
+    .pager>nav>ol[data-role="pageNumbers"]>li, .pager>nav>button{ 
+      font: inherit; padding: 0 .3em;
+      border: none; min-width: 1.4em; line-height: 2em; text-align: center;
+      background: linear-gradient(to bottom, white 0%, #DEDEDE 100%); margin: .2em;
+      border-radius: 4px; box-shadow: 0 1px 1px hsla(0,0%,0%,0.5), inset 0 1px 1px white;
+    }
+
+    .pager>nav>ol[data-role="pageNumbers"]>li{ cursor: default; }
+    .pager>nav>ol[data-role="pageNumbers"]>li.current{ background: linear-gradient(to bottom, #DADADA 0%, #D0D0D0 100%); margin: .2em; }
+
   </style>
   <script>
-    let pager = document.querySelector('#pager')
+    let pagers = document.querySelectorAll('.pager')
     new Pager({
-      element: pager,
+      element: pagers[0],
       currentPage: 1,
       totalPage: 100,
     })
-    pager.addEventListener('pageChange', (e)=>{
+    pagers[0].addEventListener('pageChange', (e)=>{
       console.log(e.detail.page)
+    })
+
+    new Pager({
+      element: pagers[1],
+      currentPage: parseInt(bom.queryString.get('page'),10),
+      totalPage: 100,
+      pageQuery: 'page'
     })
   </script>
 
