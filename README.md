@@ -21,3 +21,14 @@ https://frankfang.github.io/wheels/
 1. `git clone https://github.com/FrankFang/wheels.git`
 2. `cd wheels`
 3. 用浏览器打开 index.html
+
+# 后续要做的轮子
+
+- 图片占位符
+- 图片懒加载
+- 自制 template 
+- 下拉刷新
+- Typeahead
+- 表单验证
+- Dialog
+- 轮播
