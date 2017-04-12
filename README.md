@@ -15,3 +15,9 @@ https://frankfang.github.io/wheels/
 - Tabs 的源码：https://github.com/FrankFang/wheels/blob/master/lib/tabs/index.js
 - FullPage 的源码：https://github.com/FrankFang/wheels/blob/master/lib/fullpage/index.js
 - DOM 库的源码：https://github.com/FrankFang/wheels/blob/master/lib/dom/index.js
+
+# 运行
+
+1. `git clone https://github.com/FrankFang/wheels.git`
+2. `cd wheels`
+3. 用浏览器打开 index.html
