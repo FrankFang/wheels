@@ -20,6 +20,9 @@ https://frankfang.github.io/wheels/
 - FullPage 的源码
     1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/fullpage/index.js)
     2. [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/fullpage.html)
+- Pager 的源码
+    1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/pager/index.js)
+    2. [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/pager.html)
 - DOM 库的源码
     1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/dom/index.js)
 - BOM 库的源码
