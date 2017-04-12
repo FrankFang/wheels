@@ -22,6 +22,8 @@ https://frankfang.github.io/wheels/
     2. [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/fullpage.html)
 - DOM 库的源码
     1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/dom/index.js)
+- BOM 库的源码
+    1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/bom/index.js)
 
 # 运行
 
