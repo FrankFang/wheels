@@ -17,12 +17,12 @@ https://frankfang.github.io/wheels/
 - Tabs 的源码
     1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/tabs/index.js)
     2. [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/tabs.html)
-- FullPage 的源码
-    1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/fullpage/index.js)
-    2. [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/fullpage.html)
 - Pager 的源码
     1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/pager/index.js)
     2. [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/pager.html)
+- FullPage 的源码
+    1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/fullpage/index.js)
+    2. [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/fullpage.html)
 - DOM 库的源码
     1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/dom/index.js)
 - BOM 库的源码
