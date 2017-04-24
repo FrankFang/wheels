@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Date2</title>
+
+  <div class="calendar"></div>
+  <script src="../lib/date2/index.js"></script>
+  <script>
+    {
+      let assert = console.assert.bind(console)
+      let date = new Date(2011, 0, 4, 6, 8, 10, 999)
+      let d1 = new Date2(date)
+      assert(d1.date !== date)
+      assert(d1.date.getTime() === date.getTime())
+
+      assert(d1.weekday() === date.getDay())
+      assert(d1.day() === date.getDate())
+      assert(d1.year() === date.getFullYear())
+      assert(d1.month() === date.getMonth() + 1)
+      assert(d1.hours() === date.getHours())
+      assert(d1.minutes() === date.getMinutes())
+      assert(d1.seconds() === date.getSeconds())
+      assert(d1.milliseconds() === date.getMilliseconds())
+      assert(d1.year(2012).date.getFullYear() === 2012)
+      assert(date.getFullYear() === 2011)
+      assert(d1.month(4).date.getMonth() === 3)
+      assert(d1.day(1).date.getDate() === 1)
+      assert(d1.hours(2).date.getHours() === 2)
+      assert(d1.minutes(2).date.getMinutes() === 2)
+      assert(d1.seconds(2).date.getSeconds() === 2)
+      assert(d1.milliseconds(2).date.getMilliseconds() === 2)
+
+      assert(d1.monthBeginning.day() === 1)
+      assert(d1.monthEnding.day() === 31)
+
+      let d2 = new Date2(new Date(2011,0,31))
+      assert(d2.nextMonth.month() === 2)
+      assert(d2.nextMonth.nextMonth.month() === 3)
+    }
+
+  </script>
+
+  <!--百度统计-->
+  <script> var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?950926001a84a4f88cd3e1c7c0bfac08"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script>
+</html>

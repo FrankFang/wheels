@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Calendar</title>
+
+  <div class="page">
+    <nav>
+      <h1 class="date"></h1>
+      <div class="controls">
+        <button id="previousMonth">&lt;</button>
+        <button id="today">今天</button>
+        <button id="nextMonth">&gt;</button>
+      </div>
+    </nav>
+    <div class="calendar"></div>
+  </div>
+  <script src="../lib/dom/index.js"></script>
+  <script src="../lib/date2/index.js"></script>
+  <script src="../lib/calendar/index.js"></script>
+  <style>
+    body{margin:0;}      
+    * {box-sizing: border-box;}
+    h1{margin: 0;}
+    .page{ min-height: 100vh; display: flex; flex-direction: column; }
+    .page > nav:first-child{text-align: right; display: flex;
+      justify-content: space-between; align-items: center;padding: 1em;}
+    .calendar {  flex-grow: 1; display: flex; flex-direction: column;}
+    .calendar> ol{list-style:none; margin:0; padding:0; }
+    .calendar> ol.weekdays{display: flex; text-align: right; }
+    .calendar> ol.weekdays >li{width: 14.2857%; padding: .5em 1em;}
+
+    .calendar> ol.days{display: flex; flex-wrap: wrap; flex-grow: 1;}
+    .calendar> ol.days>li{width: 14.2857%; border-right: 1px solid #C7C7CC; border-top: 1px solid #C7C7CC;
+      position: relative;
+    }
+    .calendar> ol.days>li:nth-child(7n){ border-right: none; }
+    .calendar> ol.days>li> .dayLabel{
+      position: absolute; right: 1em;  top: .8em; white-space: nowrap; text-align: right;
+    }
+
+    .calendar .today .day{ background: red; width: 1.6em; display: inline-block; text-align: center; height: 1.6em;
+      line-height: 1.6em; border-radius: 50%; color: white;
+    }
+    .calendar .weekdays .weekend{ color: #B8B8B8; }
+    .calendar .days .weekend{ background: #F5F5F5; }
+  </style>
+  <script>
+    let calendar = new Calendar({
+      element: document.querySelector('.calendar'),
+      output: document.querySelector('.date'),
+    })
+    previousMonth.onclick = function(){
+      calendar.previousMonth()
+    }
+    nextMonth.onclick = function(){
+      calendar.nextMonth()
+    }
+    today.onclick = function(){
+      calendar.resetMonth()
+    }
+  </script>
+
+  <!--百度统计-->
+  <script> var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?950926001a84a4f88cd3e1c7c0bfac08"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script>
+</html>
