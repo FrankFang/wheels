@@ -16,18 +16,23 @@ https://frankfang.github.io/wheels/
 
 由易到难：
 
-1. Tabs 的源码
+0. Tabs 的源码
     1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/tabs/index.js)
     2. [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/tabs.html)
-2. Pager 的源码
+0. Pager 的源码
     1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/pager/index.js)
     2. [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/pager.html)
-3. FullPage 的源码
+0. FullPage 的源码
     1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/fullpage/index.js)
     2. [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/fullpage.html)
-4. DOM 库的源码
+0. Calendar 的源码
+    1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/calendar/index.js)
+    2. [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/calendar.html)
+0. Date 库的源码
+    1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/date2/index.js)
+0. DOM 库的源码
     1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/dom/index.js)
-5. BOM 库的源码
+0. BOM 库的源码
     1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/bom/index.js)
 
 # 运行
