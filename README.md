@@ -26,6 +26,9 @@ https://frankfang.github.io/wheels/
 0. Calendar 的源码
     1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/calendar/index.js)
     2. [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/calendar.html)
+0. 图片上传的源码
+    1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/image-picker/index.js)
+    2. [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/image-picker.html)
 0. Date 库的源码
     1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/date2/index.js)
 0. DOM 库的源码
