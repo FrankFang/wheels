@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Image Picker</title>
+  <style>
+    *{box-sizing: border-box;}
+    body{ display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #362057; }
+    .card { background: white; width: 20em; height: 80vh; box-shadow: 0 0 5px hsla(0,0%,0%,0.95); border-radius: 2px;
+      display: flex; justify-content: center; padding-top: 3em;}
+  </style>
+
+
+  <div class="card">
+    <div class="image-picker">
+      <img src="https://avatars0.githubusercontent.com/u/839559">
+    </div>
+  </div>
+  <script src="../lib/dom/index.js"></script>
+  <script src="../lib/image-picker/index.js"></script>
+  <style>
+    .image-picker{ width: 100px; height: 100px; border-radius: 50%; overflow: hidden; position: relative; }
+    .image-picker::after{
+      content:''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 50%;
+      box-shadow: inset 0 0 5px hsla(264, 46%, 23%, 0.5); color: white;
+      display: flex; justify-content: center; align-items: center; cursor: pointer;
+    }
+    .image-picker:hover::after{
+      content:'编辑'; background: hsla(0,0%,0%,0.2);
+    }
+    .image-picker>img{ max-width: 100%; max-height: 100%; }
+    .image-picker>input[type=file]{ position: absolute; right:0; top: 0; width: 300%;
+      height: 100%; z-index: 1; cursor: pointer; opacity: 0;
+    }
+    .image-picker.uploading::after{
+      content:'上传中'; background: hsla(0,0%,0%,0.2);
+    }
+    .image-picker.downloading::after{
+      content:'处理中'; background: hsla(0,0%,0%,0.2);
+    }
+  </style>
+  <script>
+    new ImagePicker({
+      element: document.querySelector('.image-picker'),
+      upload: {
+        url: 'http://45.76.180.233/upload',
+        method: 'PUT',
+        inputName: 'file'
+      },
+      parseResponse: (response) => {
+        response = JSON.parse(response)
+        return `http://45.76.180.233/upload/${response.key}`
+      },
+      fallbackImage: 'https://avatars0.githubusercontent.com/u/839559'
+    })
+  </script>
+
+  <!--百度统计-->
+  <script> var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?950926001a84a4f88cd3e1c7c0bfac08"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script>
+</html>
