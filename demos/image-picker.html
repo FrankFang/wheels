@@ -43,13 +43,13 @@
     new ImagePicker({
       element: document.querySelector('.image-picker'),
       upload: {
-        url: 'http://45.76.180.233/upload',
+        url: 'https://frankfang.com/image-server/upload',
         method: 'PUT',
         inputName: 'file'
       },
       parseResponse: (response) => {
         response = JSON.parse(response)
-        return `http://45.76.180.233/upload/${response.key}`
+        return `https://frankfang.com/image-server/upload/${response.key}`
       },
       fallbackImage: 'https://avatars0.githubusercontent.com/u/839559'
     })
