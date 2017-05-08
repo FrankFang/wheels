@@ -3,6 +3,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Fullpage</title>
+  <style>
+    body{ margin:0; color: #0F0E0D; }
+    .page{ height: 100vh; }
+    section{ height: 100vh; display: flex; justify-content: center; align-items: center; font-size: 20vh; }
+    section:nth-child(1){ background: #F1AF22; }
+    section:nth-child(2){ background: #356ADA; }
+    section:nth-child(3){ background: #D82220; }
+    section:nth-child(4){ background: #08AA37; }
+  </style>
   <div class="page">
     <section>
       <div class="circle">1</div>
@@ -21,15 +30,6 @@
   <script src="../lib/dom/index.js"></script>
   <script src="view-source.js"></script>
   <script src="../lib/fullpage/index.js"></script>
-  <style>
-    body{ margin:0; color: #0F0E0D; }
-    .page{ height: 100vh; }
-    section{ height: 100vh; display: flex; justify-content: center; align-items: center; font-size: 20vh; }
-    section:nth-child(1){ background: #F1AF22; }
-    section:nth-child(2){ background: #356ADA; }
-    section:nth-child(3){ background: #D82220; }
-    section:nth-child(4){ background: #08AA37; }
-  </style>
   <script>
     new FullPage({
       element: document.querySelector('body > .page')

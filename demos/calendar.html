@@ -3,22 +3,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Calendar</title>
-
-  <div class="page">
-    <nav>
-      <h1 class="date"></h1>
-      <div class="controls">
-        <button id="previousMonth">&lt;</button>
-        <button id="today">今天</button>
-        <button id="nextMonth">&gt;</button>
-      </div>
-    </nav>
-    <div class="calendar"></div>
-  </div>
-  <script src="../lib/dom/index.js"></script>
-  <script src="view-source.js"></script>
-  <script src="../lib/date2/index.js"></script>
-  <script src="../lib/calendar/index.js"></script>
   <style>
     body{margin:0;}      
     * {box-sizing: border-box;}
@@ -48,6 +32,22 @@
     .calendar .days .previousMonth,
     .calendar .days .nextMonth{ color: #C3C3C3; }
   </style>
+
+  <div class="page">
+    <nav>
+      <h1 class="date"></h1>
+      <div class="controls">
+        <button id="previousMonth">&lt;</button>
+        <button id="today">今天</button>
+        <button id="nextMonth">&gt;</button>
+      </div>
+    </nav>
+    <div class="calendar"></div>
+  </div>
+  <script src="../lib/dom/index.js"></script>
+  <script src="view-source.js"></script>
+  <script src="../lib/date2/index.js"></script>
+  <script src="../lib/calendar/index.js"></script>
   <script>
     let calendar = new Calendar({
       element: document.querySelector('.calendar'),
