@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="animated"></div>
+</body>
+<script type="text/javascript">
+ var requestId = 0;
+var animationStartTime = 0;
+
+function animate(time) {
+    var frog = document.getElementById("animated");
+    frog.style.left = (50 + (time - animationStartTime)/10 % 300) + "px";
+    frog.style.top = (185 - 10 * ((time - animationStartTime)/100 % 10) + ((time - animationStartTime)/100 % 10) * ((time - animationStartTime)/100 % 10) ) + "px";
+    var t = (time - animationStartTime)/10 % 100;
+    frog.style.backgroundPosition = - Math.floor(t / (100/2)) * 60+ "px";
+    requestId = window.requestAnimationFrame(animate);
+}
+function start() {
+    animationStartTime = window.performance.now();
+    requestId = window.requestAnimationFrame(animate);
+}
+function stop() {
+    if (requestId)
+    window.cancelAnimationFrame(requestId);
+    requestId = 0;
+}
+</script>
+</html>
