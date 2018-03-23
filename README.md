@@ -1,4 +1,6 @@
 # 轮子
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FFrankFang%2Fwheels.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FFrankFang%2Fwheels?ref=badge_shield)
+
 
 不用任何框架、预编译，用最笨的办法造轮子。
 
@@ -53,3 +55,7 @@ https://frankfang.github.io/wheels/
 - 表单验证
 - Dialog
 - 轮播
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FFrankFang%2Fwheels.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FFrankFang%2Fwheels?ref=badge_large)
