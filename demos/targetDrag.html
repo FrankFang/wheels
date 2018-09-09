@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>TargetDrag</title>
+    <style media="screen">
+    *{box-sizing: border-box;}
+    body{ display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #E2DED2; }
+    .target{
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      position: absolute;
+      left: 0px;
+      top:0px;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 200px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="target" style="color:black;">
+      点击拖拽
+    </div>
+    <script src="../lib/dom/index.js"></script>
+    <script type="text/javascript" src="../lib/targetDrag/index.js"></script>
+    <script src="view-source.js"></script>
+    <script type="text/javascript">
+      console.log(document.getElementsByClassName('target')[0].style.border);
+      new TargetDrag({
+        element:document.getElementsByClassName('target')[0],
+        flag:false
+      })
+    </script>
+  <!--百度统计-->
+  <script> var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?950926001a84a4f88cd3e1c7c0bfac08"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script>
+  </body>
+</html>
