@@ -1,55 +1,51 @@
-# 轮子
+# Wheels
 
-不用任何框架、预编译，用最笨的办法造轮子。
+Create wheels in the dumbest way possible without any framework, pre-compilation, using the latest JS syntax, and without webpack, babel, SCSS, require, npm, and even semicolons!!! All the code is open source for easy reading.
 
-- 没有 webpack、没有 babel、没有 SCSS、没有 require、没有 npm，而且没有分号！！！
-- 使用最新 JS 语法编写
-- 所有代码开源，方便阅读
+## Preview
 
-# 预览
+[Preview Link](https://frankfang.github.io/wheels/)
 
-https://frankfang.github.io/wheels/
+## How to Read the Source Code
 
-# 如何阅读源代码
+From easy to difficult:
 
-由易到难：
+1. Tabs
+   - [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/tabs/index.js)
+   - [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/tabs.html)
+2. Pager
+   - [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/pager/index.js)
+   - [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/pager.html)
+3. FullPage
+   - [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/fullpage/index.js)
+   - [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/fullpage.html)
+4. Calendar
+   - [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/calendar/index.js)
+   - [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/calendar.html)
+5. Image Picker
+   - [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/image-picker/index.js)
+   - [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/image-picker.html)
+   - [Backend](https://github.com/FrankFang/image/blob/master/server.js)
+6. Date Library
+   - [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/date2/index.js)
+7. DOM Library
+   - [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/dom/index.js)
+8. BOM Library
+   - [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/bom/index.js)
 
-0. Tabs 的源码
-    1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/tabs/index.js)
-    2. [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/tabs.html)
-0. Pager 的源码
-    1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/pager/index.js)
-    2. [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/pager.html)
-0. FullPage 的源码
-    1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/fullpage/index.js)
-    2. [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/fullpage.html)
-0. Calendar 的源码
-    1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/calendar/index.js)
-    2. [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/calendar.html)
-0. 图片上传的源码
-    1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/image-picker/index.js)
-    2. [HTML+CSS](https://github.com/FrankFang/wheels/blob/master/demos/image-picker.html)
-    3. [后台](https://github.com/FrankFang/image/blob/master/server.js)
-0. Date 库的源码
-    1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/date2/index.js)
-0. DOM 库的源码
-    1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/dom/index.js)
-0. BOM 库的源码
-    1. [JavaScript](https://github.com/FrankFang/wheels/blob/master/lib/bom/index.js)
-
-# 运行
+## How to Run
 
 1. `git clone https://github.com/FrankFang/wheels.git`
 2. `cd wheels`
-3. 用浏览器打开 index.html
+3. Open `index.html` in a browser.
 
-# 后续要做的轮子
+## Future Wheels to Be Built
 
-- 图片占位符
-- 图片懒加载
-- 自制 template 
-- 下拉刷新
+- Image Placeholder
+- Image Lazy Loading
+- Custom Template
+- Pull-to-Refresh
 - Typeahead
-- 表单验证
+- Form Validation
 - Dialog
-- 轮播
+- Carousel
