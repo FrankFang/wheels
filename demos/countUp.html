@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<span></span>
+</body>
+<script src="../lib/countUp/index.js"></script>
+<script type="text/javascript">
+var options = {
+  useEasing : true, 
+  useGrouping : true, 
+  separator : ',', 
+  decimal : '.', 
+};
+var demo = new CountUp(document.querySelector('span'), 0, 100, 0, 1000, options);
+demo.start();
+</script>
+</html>
